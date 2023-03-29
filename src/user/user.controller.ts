@@ -24,7 +24,7 @@ export class UserController {
     try {
       console.log(a.b.c)
     } catch (error) {
-      throw new BusinessException('你这个参数错了' + process.env.DATABASE_USER)
+      throw new BusinessException('你这个参数错了:' + process.env.DATABASE_USER)
     }
     return this.userService.findAll();
   }
